@@ -24,5 +24,6 @@ app.use('/users', usersRoute);
 
 // Start the server
 app.listen(PORT, () => {
+   // no-eslint-console
   console.log(`Server is running on http://localhost:${PORT}`);
 });
