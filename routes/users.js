@@ -1,7 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const usersRoute = require("./routes/users");
-app.use("/users", usersRoute);
 
 let users = [
   { id: 1, name: "Alice" },
