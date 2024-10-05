@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 
 let users = [
@@ -20,7 +21,7 @@ router.post('/', (req, res) => {
 
 // PUT update user
 router.put('/:id', (req, res) => {
-  const userId = parseInt(req.params.id);
+  const userId = parseInt(req.params.id, 10);
   const updatedUser = req.body;
   users = users.map((user) => (user.id === userId ? updatedUser : user));
   res.json(updatedUser);
@@ -28,7 +29,7 @@ router.put('/:id', (req, res) => {
 
 // DELETE user
 router.delete('/:id', (req, res) => {
-  const userId = parseInt(req.params.id);
+  const userId = parseInt(req.params.id, 10);
   users = users.filter((user) => user.id !== userId);
   res.json({ message: 'User deleted' });
 });

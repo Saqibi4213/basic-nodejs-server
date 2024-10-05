@@ -1,6 +1,7 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const path = require("path");
+const express = require('express');
+
+const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const PORT = 3000;
@@ -9,17 +10,17 @@ const PORT = 3000;
 app.use(bodyParser.json());
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'ublic')));
 
 // Import the routes
-const indexRoute = require("./routes/index");
-const pageRoute = require("./routes/page");
-const usersRoute = require("./routes/users");
+const indexRoute = require('./routes/index');
+const pageRoute = require('./routes/page');
+const usersRoute = require('./routes/users');
 
 // Use the routes
-app.use("/", indexRoute);
-app.use("/", pageRoute);
-app.use("/users", usersRoute);
+app.use('/', indexRoute);
+app.use('/', pageRoute);
+app.use('/users', usersRoute);
 
 // Start the server
 app.listen(PORT, () => {
