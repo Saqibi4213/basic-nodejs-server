@@ -76,7 +76,7 @@ To run this project locally, ensure you have the following installed:
 ## Author
 
 - **Name**: Mehria Saqibi
-- **Email**: [your-email@example.com](mosawermh@gmail.com)
+- **Email**: [email](mosawermh@gmail.com)
 - **GitHub**: [Saqibi4213]
 
 
