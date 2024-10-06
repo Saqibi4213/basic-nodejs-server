@@ -21,7 +21,7 @@ A basic and responsive Node.js server application built using **Express.js**. Th
 ## Live Demo
 
 Check out the live demo of the API and front-end served with Node.js:
-- **GitHub Pages / Deployment Link**: [Deployment URL here]
+- **GitHub Pages / Deployment Link**: [[here](https://basic-nodejs-server-u39575qcm-saqibi4213s-projects.vercel.app/)]
 
 ## Requirements
 
